@@ -32,7 +32,7 @@ public class Funciones {
         
             p.setSize (740, 330);
             p.setLocation (0 , 0);
-        
+        // error!!!
             bgContent.removeAll();
             bgContent.add (p,BorderLayout.CENTER);
             bgContent.revalidate();
