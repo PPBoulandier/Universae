@@ -1,0 +1,88 @@
+{
+    "modulos":[{
+        "nombre_modulo": "Embarque",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton0.png",
+            "path_home_button":"src/com/imagesBase/HomeButton0.png",
+            "imageGame0":"src/com/imagesGame/Embarque0.png",
+            "imageGame1":"src/com/imagesGame/Embarque1.png",
+            "imageGame2":"src/com/imagesGame/Embarque2.png",
+            "imageGame3":"src/com/imagesGame/Embarque3.png",
+            "imageGame4":"src/com/imagesGame/Embarque4.png",
+            "titulo_game":"Titulo0",
+            "descripcion": "Descripcion0",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ,{ "nombre_modulo": "Hemorragia",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton1.png",
+            "path_home_button":"src/com/imagesBase/HomeButton1.png",
+            "imageGame0":"src/com/imagesGame/Hemorragia0.png",
+            "imageGame1":"src/com/imagesGame/Hemorragia1.png",
+            "imageGame2":"src/com/imagesGame/Hemorragia2.png",
+            "imageGame3":"src/com/imagesGame/Hemorragia3.png",
+            "imageGame4":"src/com/imagesGame/Hemorragia4.png",
+            "titulo_game":"Titulo1",
+            "descripcion": "Descripcion1",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ,{ "nombre_modulo": "Extincion",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton2.png",
+            "path_home_button":"src/com/imagesBase/HomeButton2.png",
+            "imageGame0":"src/com/imagesGame/Extincion0.png",
+            "imageGame1":"src/com/imagesGame/Extincion1.png",
+            "imageGame2":"src/com/imagesGame/Extincion2.png",
+            "imageGame3":"src/com/imagesGame/Extincion3.png",
+            "imageGame4":"src/com/imagesGame/Extincion4.png",
+            "titulo_game":"Titulo2",
+            "descripcion": "Descripcion2",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ,{ "nombre_modulo": "EPIS",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton3.png",
+            "path_home_button":"src/com/imagesBase/HomeButton3.png",
+            "imageGame0":"src/com/imagesGame/EPIS0.png",
+            "imageGame1":"src/com/imagesGame/EPIS1.png",
+            "imageGame2":"src/com/imagesGame/EPIS2.png",
+            "imageGame3":"src/com/imagesGame/EPIS3.png",
+            "imageGame4":"src/com/imagesGame/EPIS4.png",
+            "titulo_game":"Titulo3",
+            "descripcion": "Descripcion3",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ,{ "nombre_modulo": "Helicoptero",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton4.png",
+            "path_home_button":"src/com/imagesBase/HomeButton4.png",
+            "imageGame0":"src/com/imagesGame/Helicoptero0.png",
+            "imageGame1":"src/com/imagesGame/Helicoptero1.png",
+            "imageGame2":"src/com/imagesGame/Helicoptero2.png",
+            "imageGame3":"src/com/imagesGame/Helicoptero3.png",
+            "imageGame4":"src/com/imagesGame/Helicoptero4.png",
+            "titulo_game":"Titulo4",
+            "descripcion": "Descripcion4",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ,{ "nombre_modulo": "Ascensor",
+        "path_launcherButton":"src/com/imagesBase/LauncherButton5.png",
+            "path_home_button":"src/com/imagesBase/HomeButton5.png",
+            "imageGame0":"src/com/imagesGame/Ascensor0.png",
+            "imageGame1":"src/com/imagesGame/Ascensor1.png",
+            "imageGame2":"src/com/imagesGame/Ascensor2.png",
+            "imageGame3":"src/com/imagesGame/Ascensor3.png",
+            "imageGame4":"src/com/imagesGame/Ascensor4.png",
+            "titulo_game":"Titulo5",
+            "descripcion": "Descripcion5",
+            "duracion":"10 minutos",
+            "dificultad":"facil",
+            "path_app":"String"
+        }
+    ]
+}
