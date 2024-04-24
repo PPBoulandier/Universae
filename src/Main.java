@@ -109,6 +109,8 @@ public class Main extends javax.swing.JFrame {
         homePanel.setMaximumSize(new java.awt.Dimension(1920, 1080));
         homePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanelContent.setAlignmentX(0.0F);
+        jPanelContent.setAlignmentY(0.0F);
         jPanelContent.setMaximumSize(new java.awt.Dimension(1550, 870));
         jPanelContent.setMinimumSize(new java.awt.Dimension(1550, 870));
         jPanelContent.setOpaque(false);
