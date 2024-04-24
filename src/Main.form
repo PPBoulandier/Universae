@@ -60,6 +60,12 @@
       <SubComponents>
         <Container class="javax.swing.JPanel" name="jPanelContent">
           <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1550, 870]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[1550, 870]"/>
+            </Property>
             <Property name="opaque" type="boolean" value="false"/>
           </Properties>
           <AuxValues>
@@ -99,7 +105,7 @@
           </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-            <Property name="columns" type="int" value="0"/>
+            <Property name="columns" type="int" value="14"/>
             <Property name="rows" type="int" value="1"/>
           </Layout>
         </Container>
