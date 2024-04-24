@@ -4,16 +4,12 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Image;
-import java.awt.PopupMenu;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -36,6 +32,7 @@ import org.json.JSONObject;
  */
 
 public class Main extends javax.swing.JFrame {
+    
 
     /**
      * Creates new form home
@@ -46,43 +43,22 @@ public class Main extends javax.swing.JFrame {
         
         this.setLocationRelativeTo(this);
         
-        //Creamos iconos de los modulos y agregamos al JPanel
-        for(int i=0;i<14;i++){
-            String nombreModulo = Funciones.getNombreModulo(i);
-            String pathLauncherButton = Funciones.getPathLauncherButton(i);
+        Funciones.ConfigButtons(jPanelButtons);
+        
+        
        
-            //Creacion botones
-            JLabel label = new JLabel() ;
-            Funciones.SetImageLabelDIM (label, pathLauncherButton);
-            
-            //Agregar botón al panel
-            jPanelButtons.add(label);
-            
-            //Mouse Adapter es una clase que implementa MouseListener y que tiene como constructores mouseEntered, mouseExited, etc.
-            label.addMouseListener(new MouseAdapter() {
-            @Override //aseguramos de que estamos implementando correctamente la interfaz y sobrescribiendo estos métodos específicos.
-                public void mouseEntered(MouseEvent e) {
-                    Funciones.SetImageLabelMAX(label, pathLauncherButton);
-                }
-            @Override
-                public void mouseExited(MouseEvent e) {
-                    Funciones.SetImageLabelDIM(label, pathLauncherButton);
-                }
-            });       
+        
+    }
+        private void MouseEntered(java.awt.event.MouseEvent evt) {
+                
+                Funciones.SetImageLabelMAX (label, path);
+           
         }
+        /*private void MouseExited(java.awt.event.MouseEvent evt) { 
         
-        //Crear vista Home
-            Home p1 = new Home ();
-            p1.setSize (1550, 870);
-            p1.setLocation (0 , 0);
-        
-            jPanelContent.removeAll();
-            jPanelContent.add (p1,BorderLayout.CENTER);
-            jPanelContent.revalidate();
-            jPanelContent.repaint(); 
-        
-    }    
-                 
+                Funciones.SetImageLabelDIM (label, path,103,111);
+       
+        }*/               
                    
     
     /**
@@ -109,8 +85,6 @@ public class Main extends javax.swing.JFrame {
         homePanel.setMaximumSize(new java.awt.Dimension(1920, 1080));
         homePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanelContent.setMaximumSize(new java.awt.Dimension(1550, 870));
-        jPanelContent.setMinimumSize(new java.awt.Dimension(1550, 870));
         jPanelContent.setOpaque(false);
 
         javax.swing.GroupLayout jPanelContentLayout = new javax.swing.GroupLayout(jPanelContent);
@@ -127,7 +101,7 @@ public class Main extends javax.swing.JFrame {
         homePanel.add(jPanelContent, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 1550, 870));
 
         jPanelButtons.setOpaque(false);
-        jPanelButtons.setLayout(new java.awt.GridLayout(1, 14));
+        jPanelButtons.setLayout(new java.awt.GridLayout(1, 0));
         homePanel.add(jPanelButtons, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 1550, 130));
 
         homeLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imagesBase/FondoBase.png"))); // NOI18N
@@ -154,14 +128,6 @@ public class Main extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
          
-       
-        
-        
-        
-        
-        
-        
-        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
